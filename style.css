@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container {
+    min-width: 300px;
+}
+
+.sidebar {
+    flex-shrink: 0;
+    max-width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: left 0.3s linear;
+}
+
+.sidebar.active {
+    left: 0;
+    z-index: 1;
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 5px;
+    height: 100%;
+    background-color: crimson;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    z-index: -1;
+}
+
+#ranks tr td:first-child {
+    padding-right: 20px;
+}
+
+.properties{
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+}

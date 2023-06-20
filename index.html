@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rank Alone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="properties">Chi tiết</div>
+        <div class="sidebar">
+            <center>
+                <h3>Bậc xếp hạng (ngày)</h3>
+            </center>
+            <hr>
+            <table id="ranks"></table>
+        </div>
+        <div class="main">
+            <center>
+                <h1>App đếm ngày chia tay</h1>
+                <label for="dateInput">Nhập ngày bạn chia tay</label>
+                <input type="date" id="dateInput" name="date" />
+                <button id="btn">Đếm</button>
+                <h3 id="text-output">Nhập để xem tiến trình</h3>
+                <div><b class="title-rank"></b></div><br>
+                <table>
+                    <tr>
+                        <td class='now-rank'>Không biết</td>
+                        <td><input type="range" id="process" step="1" value="0" min="0" max="100" disabled></td>
+                        <td class="next-rank">Không biết</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
